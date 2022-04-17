@@ -126,7 +126,7 @@ img {
 }
 
 .header-contact-item {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--basic-text-color);
@@ -141,7 +141,7 @@ img {
 }
 
 .header-tel {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 /*-- Section 1 - HERO -- */
@@ -220,7 +220,8 @@ img {
   justify-content: center;
 }
 
-.benefits-title {
+.benefits-title,
+.footer-social-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -400,6 +401,10 @@ img {
   padding-bottom: 60px;
 }
 
+.footer .container {
+  display: flex;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -435,6 +440,44 @@ img {
 .footer-list-mail,
 .footer-list-tel {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Footer social list */
+.footer-social {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-social-title {
+  color: var(--second-title-color);
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--second-title-color);
 }
 
 /*-- PORTFOLIO PAGE -- */
