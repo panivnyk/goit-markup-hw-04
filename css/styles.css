@@ -110,7 +110,6 @@ img {
 
 .header-contact {
   margin-left: auto;
-  display: flex;
   align-items: center;
 }
 
@@ -125,18 +124,19 @@ img {
   color: var(--header-color);
 }
 
+.header-contact-point {
+  display: flex;
+}
+
 .header-contact-item {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--basic-text-color);
+  fill: currentColor;
 }
 
-.header-contact-point {
-  display: flex;
-}
 .contact-icon {
-  fill: currentColor;
   margin-right: 10px;
 }
 
@@ -466,12 +466,15 @@ img {
   display: flex;
   width: 44px;
   height: 44px;
-
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
   fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+}
+
+.footer-social-icon {
 }
 
 .footer-social-link:hover,
